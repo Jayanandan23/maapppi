@@ -11,8 +11,8 @@ function increase() {
   count++;
   countEl.textContent = count;
 
-  // Check for multiples of 50
-  if (count % 50 === 0) {
+  // Check for multiples of 10
+  if (count % 10 === 0) {
     showPopup();
   }
 }
