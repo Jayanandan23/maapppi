@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
   <meta charset="UTF-8">
   <title>HOOLI shyt</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Fuck mehhh 🚀</h1>
+  <div class="app">
+    <h1>Counter App</h1>
+    <p class="subtitle">Tap responsibly 😌</p>
 
-    <p>Click the button to bang</p>
+    <div class="counter" id="count">0</div>
 
-    <h2 id="count">0</h2>
+    <button onclick="increase()">Increase</button>
+  </div>
 
-    <button onclick="increase()">Fuk me</button>
+  <!-- Popup -->
+  <div class="popup hidden" id="popup">
+    <div class="popup-content">
+      <h2>😂 Heyyy!</h2>
+      <img id="popupImage" src="catlaugh.jpeg" alt="funny image" class="popup-img">
+      <p>
+        You successfully wasted<br>
+        <strong><span id="timeSpent"></span></strong><br>
+        tapping this button, idiot 💀
+      </p>
+      <button onclick="closePopup()">Okay 😭</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
